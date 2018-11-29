@@ -1,12 +1,42 @@
 body, html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+}
 .pokemon-list {
-visibility: hidden;
-height: 50px;
-overflow: hidden;
+  position: absolute;
+  border-radius: 5px;
+/* visibility: hidden; */
+height: 62px;
+width: 160px;
+top: 435px;
+left: 20px;
+overflow-y: scroll;
+background-color: blueviolet;
+z-index: 5;
+padding-right: 15px;
+opacity: .4;
+}
+
+::-webkit-scrollbar { 
+  display: none;
+}
+
+.bigscreen {
+  position: absolute;
+  border-radius: 5px;
+/* visibility: hidden; */
+height: 257px;
+width: 260px;
+top: 154px;
+left: 405px;
+/* overflow-y: scroll; */
+background-color: blueviolet;
+z-index: 4;
+padding-right: 15px;
 }
 
 h1 {
@@ -200,4 +230,5 @@ justify-content: center;
   visibility: hidden;
 }
 }
+
 
