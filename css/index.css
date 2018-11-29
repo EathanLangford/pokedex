@@ -24,6 +24,46 @@ h1 {
   /* background-color: aqua */
 }
 
+.screen {
+  position: absolute;
+  margin: 0 auto;
+  /* top: 50px; */
+  top: 188px;
+  left: 75px;
+  width: 178px;
+  height: 146px;
+  /* background-color: pink; */
+  z-index: 2;
+  /* opacity: .9; */
+}
+.screen img{
+  position: absolute;
+  margin: 0 auto;
+  /* top: 50px; */
+  /* top: 188px; */
+  /* left: 75px; */
+  width: 178px;
+  height: 146px;
+  /* background-color: pink; */
+  z-index: 2;
+  /* opacity: .9; */
+}
+
+.pokedex-lid-side {
+  position: absolute;
+  height: 479px;
+  width: 20px;
+ /* background-color: aqua; */
+ margin-left: 330px;
+ margin-top: 60px;
+  background-image: url(/assets/imgs/pokedex-lid-side.png);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  z-index: 2;
+  /* opacity: .4; */
+  animation: pokedexside 2.8s forwards;
+
+}
 .pokedex-frame {
 position: absolute;
 /* margin: 0 auto; */
@@ -47,7 +87,7 @@ justify-content: center;
     /* top: 50%; */
     /* left: 50%; */
     /* margin-left: -15%; */
-    margin-top: 7%;
+    margin-top: 58px;
     background-image: url(/assets/imgs/pokedex-lid-top.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,7 +99,7 @@ justify-content: center;
     justify-content: center; 
     /* background-color: aqua; */
     /* opacity: 0.5; */
-    z-index: 1;
+    z-index: 2;
     animation: pokedexopen 2.5s forwards;
     /* transform-origin: right; */
     /* animation-iteration-count: 1; */
@@ -67,15 +107,7 @@ justify-content: center;
     /* animation-delay: 0; */
   }
 
-  .pokedex-lid-side {
-    position: absolute;
-    height: 481px;
-    width: 20px;
-    background-image: url(/assets/imgs/pokedex-lid-side.png);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    z-index: 1;
-  }
+
   
   @keyframes pokedexopen {
     0% {
@@ -121,5 +153,51 @@ justify-content: center;
     left: 42px;
     background-image: url(/assets/imgs/pokedex-lid-inside-open.png);
   }
+}
+
+@keyframes pokedexside {
+  0% {
+    /* transform: rotateY(0); */
+    transform-origin: right 5px -3px;
+    /* transform-origin: right; */
+    left:0px;
+  }
+  10%{
+    transform-origin: right 5px -3px;
+    /* transform-origin: right; */
+    
+  }
+  35% {
+    /* transform: rotateY(90deg); */
+    transform-origin: right 5px -3px;
+    left: 20px
+  }
+  40% {
+    /* transform: rotateY(90deg); */
+    transform-origin: right 5px -3px;
+    left: 20px
+  }
+  60% {
+    /* transform: rotateY(90deg); */
+    transform-origin: right 5px -3px;
+    left: 40px
+  }
+  80%
+  {
+    /* transition: transform 4s; */
+    transform-origin: right 5px -3px;
+    left: 41px;
+  }
+  90% {
+    /* transform: rotateY(180deg); */
+    transform-origin: right 5px -3px;
+    left: 41px;
+}
+100% {
+  /* transform: rotateY(180deg); */
+  transform-origin: right 5px -3px;
+  left: 42px;
+  visibility: hidden;
+}
 }
 
